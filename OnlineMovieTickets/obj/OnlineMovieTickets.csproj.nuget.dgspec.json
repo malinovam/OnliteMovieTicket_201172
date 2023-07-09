@@ -1,0 +1,119 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Media\\Desktop\\VI-semestar\\integrirani sistemi\\OnlineMovieTickets\\OnlineMovieTickets\\OnlineMovieTickets.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Media\\Desktop\\VI-semestar\\integrirani sistemi\\OnlineMovieTickets\\FileUploadControl\\FileUploadControl.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Media\\Desktop\\VI-semestar\\integrirani sistemi\\OnlineMovieTickets\\FileUploadControl\\FileUploadControl.csproj",
+        "projectName": "FileUploadControl",
+        "projectPath": "C:\\Users\\Media\\Desktop\\VI-semestar\\integrirani sistemi\\OnlineMovieTickets\\FileUploadControl\\FileUploadControl.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Media\\Desktop\\VI-semestar\\integrirani sistemi\\OnlineMovieTickets\\OnlineMovieTickets\\OnlineMovieTickets.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Media\\Desktop\\VI-semestar\\integrirani sistemi\\OnlineMovieTickets\\OnlineMovieTickets\\OnlineMovieTickets.csproj",
+        "projectName": "OnlineMovieTickets",
+        "projectPath": "C:\\Users\\Media\\Desktop\\VI-semestar\\integrirani sistemi\\OnlineMovieTickets\\OnlineMovieTickets\\OnlineMovieTickets.csproj",
+        "packagesPath": "C:\\Users\\Media\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Media\\Desktop\\VI-semestar\\integrirani sistemi\\OnlineMovieTickets\\OnlineMovieTickets\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Media\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Media\\Desktop\\VI-semestar\\integrirani sistemi\\OnlineMovieTickets\\FileUploadControl\\FileUploadControl.csproj": {
+                "projectPath": "C:\\Users\\Media\\Desktop\\VI-semestar\\integrirani sistemi\\OnlineMovieTickets\\FileUploadControl\\FileUploadControl.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+﻿@model OnlineMovieTickets.Models.ViewModels.BookNowViewModel
+
+@{
+    ViewData["Title"] = "BookNow";
+}
+
+<h1>BookNow</h1>
+
+<a asp-action="Index" asp-controller="Card">Check to Cart</a> |
+
+<a asp-action="Index" asp-controller="Card">Your Order Details</a> |
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="BookNow">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Movie_Name" class="control-label"></label>
+               @Model.Movie_Name
+                <span asp-validation-for="Movie_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SeatNo" class="control-label"></label>
+                <input asp-for="SeatNo" class="form-control" />
+                <span asp-validation-for="SeatNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+                <input type="submit" asp-action="checkseat" asp-controller="Home" value="ChechSeat" formmethod="post"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="MovieId" class="control-label"></label>
+                <input asp-for="MovieId" class="form-control" />
+                <span asp-validation-for="MovieId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add to Cart" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

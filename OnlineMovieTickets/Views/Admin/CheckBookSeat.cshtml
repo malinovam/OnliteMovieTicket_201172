@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<OnlineMovieTickets.Models.BookingTable>
+@{
+    ViewData["Title"] = "CheckBookSeat";
+}
+<h2>CheckBookSeat</h2>
+<p>
+    <a asp-action="Create">Create new</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.seatno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datetopresent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.moviedetails)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+                <tr>
+                <td>
+                    @Html.DisplayNameFor(model => item.seatno)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => item.UserId)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => item.Datetopresent)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => item.Amount)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => item.moviedetails)
+                </td>
+                <td></td>
+                </tr>
+    }
+    </tbody>
+</table>

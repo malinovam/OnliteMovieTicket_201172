@@ -1,0 +1,81 @@
+﻿
+
+@model IEnumerable<OnlineMovieTickets.Models.ViewModels.ApplicationUser>
+
+
+@{
+    ViewData["Title"] = "GetUserDetails";
+}
+<h2>GetUserDetails</h2>
+<p>
+    <a asp-action="Create">Create new</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NormalizesUserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NormalizedEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailConfirmed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PasswordHash)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SecyrityStamp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConcurrencyStamp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayNameFor(model => model.UserName)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.NormalizesUserName)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.Email)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.NormalizedEmail)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.EmailConfirmed)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.PasswordHash)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.SecyrityStamp)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.ConcurrencyStamp)
+                </td>
+                <td>
+                    @Html.DisplayNameFor(model => model.PhoneNumber)
+                </td>
+                <td></td>
+            </tr>
+        }
+    </tbody>
+</table>
